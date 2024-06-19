@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Babas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>PEDRO BENADIBA</h1>
+            <h2>PORTFOLIO</h2>
+            <a href="https://www.behance.net/pedrobenadiba" target="_blank" class="behance-button">BEHANCE</a>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <a href="#trabajos">TRABAJOS</a>
+        <a href="#video">VIDEO</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>TRABAJOS ELEGIDOS</h2>
+        <p>La selección de trabajos fue pensada e ideada para demostrar la versatilidad de herramientasde diseño que aprendimos a lo largo de la Licenciatura en Diseño en DiTella.</p>
+    </section>
+
+    <section id="trabajos" class="trabajos">
+        <h2>TRABAJOS</h2>
+        <div class="trabajos-container">
+            <div class="column">
+                <div class="square">
+                    <div class="title">Santiago Motorizado-Fanzine-LAB5</div>
+                    <a href="DataLab_Imagen1.jpg" data-lightbox="gallery"><img src="DataLab_Imagen1.jpg" alt="Imagen 1"></a>
+                </div>
+                <div class="square">
+                    <div class="title">Tapas para Spotify-DigiLab</div>
+                    <a href="DataLab_Imagen2.jpg" data-lightbox="gallery"><img src="DataLab_Imagen2.jpg" alt="Imagen 2"></a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="square">
+                    <div class="title">Itinerario-TP Final-LAB2</div>
+                    <a href="DataLab_Imagen3.jpg" data-lightbox="gallery"><img src="DataLab_Imagen3.jpg" alt="Imagen 3"></a>
+                </div>
+                <div class="square">
+                    <div class="title">Juego de construcción-Serpiente-TP Final-LAB3</div>
+                    <a href="DataLab_Imagen4.jpg" data-lightbox="gallery"><img src="DataLab_Imagen4.jpg" alt="Imagen 4"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="video" class="video">
+        <h2>VIDEO</h2>
+        <div class="video-container">
+            <video id="myVideo">
+                <source src="PáginaWeb-SantiagoMotorizado.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© PEDRO BENADIBA, Landing page 2024. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script>
+        document.getElementById('myVideo').addEventListener('click', function () {
+            if (this.paused) {
+                this.play();
+            } else {
+                this.pause();
+            }
+        });
+    </script>
+</body>
+</html>
